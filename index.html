@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/images/Logo.png" alt="Logo de tu tienda">
+            </div>
+            <div class="navbar-menu" id="navbarMenu">
+                <a  href="#"> Login </a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <section class="header-content">
+            <div class="texto-header">
+                <h1 class="titulo">Bienvenido a nuestra tienda en línea</h1>
+                <p class="descripcion">Productos seleccionados con 33% de descuento</p>
+            </div>
+                <button class="button boton-consolas">Consolas</button>
+        </section>
+    </header>
+
+    <main>
+        <section class="categories-section" id="categories-section">
+            <!-- Categoría Playeras -->
+            <div class="category">
+                
+                <div class="products-container">
+                    <!-- Aquí se insertarán dinámicamente los productos de la categoría Playeras -->
+                </div>
+            </div>
+    
+            <!-- Categoría Consolas -->
+            <div class="category">
+                
+                <div class="products-container">
+                    <!-- Aquí se insertarán dinámicamente los productos de la categoría Consolas -->
+                </div>
+            </div>
+    
+            <!-- Categoría Diversos -->
+            <div class="category">
+                
+                <div class="products-container">
+                    <!-- Aquí se insertarán dinámicamente los productos de la categoría Diversos -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <div class="footer-logo">
+            <img src="assets/images//Logo.png" alt="Logo" width="100">
+        </div>
+        <div class="footer-links">
+            <a href="#">Quiénes somos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Nuestras tiendas</a>
+        </div>
+        <div class="footer-form">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <textarea id="message" placeholder="Mensaje" required></textarea>
+                <div id="form-messages"></div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </footer>
+
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

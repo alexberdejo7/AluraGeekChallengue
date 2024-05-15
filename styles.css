@@ -1,0 +1,297 @@
+/* Estilos para el body y la barra de navegación */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-logo img {
+    height: 40px; /* Ajusta el tamaño del logo según necesites */
+}
+
+.navbar-search input[type="text"],
+.navbar-search button {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar-menu a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #130a8a; /* Azul */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.navbar-menu a:hover {
+    background-color: #28a745; /* Verde */
+}
+
+/* _______________________________________________ */
+/* Header Fondo */
+header {
+    position: relative;
+    height: 45vh; /* Esto hace que el header ocupe el 50% del viewport en altura */
+    background-image: url('assets/images/Hero.svg');
+    background-size: cover; /* La imagen de fondo se ajustará para cubrir todo el header */
+    background-position: center; /* La imagen se posicionará en el centro */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para el contenido del encabezado */
+.header-content {
+    
+    text-align: left;
+    padding: 2%;
+    margin: 2%;
+    margin-top: 15px;
+}
+
+.texto-header {
+    margin-bottom: 20px; /* Añade un espacio entre el texto y el botón */
+}
+
+.titulo {
+    color: rgb(248, 218, 220);
+    
+}
+
+.descripcion {
+    color: white;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.button.boton-consolas {
+    background-color: blue;
+    color: white;
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.boton-consolas:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+/* CONSUMO API MAIN 
+____________________________________________________________ */
+/* Estilos para la sección de productos */
+/* Estilos para la sección de productos */
+.categories-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+/* Estilos para la categoría */
+
+
+.category h2 {
+    margin-bottom: 20px;
+    color: #060d53; /* Cambio de color a azul */
+    text-align: left; /* Alineación a la izquierda */
+}
+
+/* Estilos para el contenedor de productos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para cada producto */
+.product {
+    width: 250px; /* Tamaño fijo de la tarjeta */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 80px; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 80px; /* Altura automática para mantener la proporción */
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #610505;
+    font-size: 18px; /* Tamaño del nombre del producto */
+}
+
+.product-info p {
+    margin: 0;
+    color: #0a0101;
+    font-size: 16px; /* Tamaño del precio */
+}
+
+
+
+
+/* Footer Y formulario */
+
+
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 100px;
+    top: 30px
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+
+
+.footer-form {
+    text-align: center;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.footer-form h2 {
+    color: #06315f;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: calc(50% - 16px); /* Ajuste para el padding */
+    box-sizing: border-box;
+}
+
+#form-messages {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+
+    .navbar-menu ul li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

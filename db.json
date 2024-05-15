@@ -1,0 +1,26 @@
+{
+    "consolas": [
+      { "nombre": "Producto 1", "precio": 499.99, "foto": "assets/images/productos/6.webp" },
+      { "nombre": "Producto 2", "precio": 499.99, "foto": "assets/images/productos/2.webp" },
+      { "nombre": "Producto 3", "precio": 499.99, "foto": "assets/images/productos/3.webp" },
+      { "nombre": "Producto 4", "precio": 499.99, "foto": "assets/images/productos/4.webp" }
+    
+  
+    ],
+    "diversos": [
+      {  "nombre": "Teclado mecánico", "precio": 99.99, "foto": "assets/images/productos/6.webp" },
+      {  "nombre": "Ratón gaming", "precio": 49.99, "foto": "assets/images/productos/2.webp" },
+      {  "nombre": "Teclado mecánico", "precio": 99.99, "foto": "assets/images/productos/3.webp" },
+      {  "nombre": "Ratón gaming", "precio": 49.99, "foto": "assets/images/productos/4.webp" }
+      
+      
+    ],
+    "playeras": [
+      {  "nombre": "Playera negra", "precio": 19.99, "foto": "assets/images/productos/6.webp" },
+      {  "nombre": "Playera blanca", "precio": 19.99, "foto": "assets/images/productos/2.webp" },
+      {  "nombre": "Playera negra", "precio": 19.99, "foto": "assets/images/productos/3.webp" },
+      {  "nombre": "Playera blanca", "precio": 19.99, "foto": "assets/images/productos/4.webp" }
+      
+    ]
+  }
+  
