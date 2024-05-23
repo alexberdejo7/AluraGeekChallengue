@@ -1,4 +1,3 @@
-// fetchProducts.js
 export function fetchAndRenderProducts(endpoint, categoryName) {
     fetch(`http://localhost:3001/${endpoint}`)
         .then(response => response.json())

@@ -1,4 +1,3 @@
-// main.js
 import { fetchAndRenderProducts } from './api.js';
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -7,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchAndRenderProducts('playeras', 'Playeras');
 });
 
-// Resto del código para el formulario y CONTACTO
+// Resto del código para el formulario de contacto
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
     const formMessages = document.getElementById('form-messages');

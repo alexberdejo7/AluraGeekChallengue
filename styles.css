@@ -15,7 +15,7 @@ body {
 }
 
 .navbar-logo img {
-    height: 40px; /* Ajusta el tamaño del logo según necesites */
+    height: 40px;
 }
 
 .navbar-search input[type="text"],
@@ -44,32 +44,30 @@ body {
 .navbar-menu a {
     display: inline-block;
     padding: 8px 12px;
-    background-color: #130a8a; /* Azul */
+    background-color: #130a8a;
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
 }
 
 .navbar-menu a:hover {
-    background-color: #28a745; /* Verde */
+    background-color: #28a745;
 }
 
 /* _______________________________________________ */
 /* Header Fondo */
 header {
     position: relative;
-    height: 45vh; /* Esto hace que el header ocupe el 50% del viewport en altura */
+    height: 45vh;
     background-image: url('assets/images/Hero.svg');
-    background-size: cover; /* La imagen de fondo se ajustará para cubrir todo el header */
-    background-position: center; /* La imagen se posicionará en el centro */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: white; /* Color del texto */
-    text-align: center; /* Alineación del texto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
 }
 
-/* Estilos para el contenido del encabezado */
 .header-content {
-    
     text-align: left;
     padding: 2%;
     margin: 2%;
@@ -77,24 +75,19 @@ header {
 }
 
 .texto-header {
-    margin-bottom: 20px; /* Añade un espacio entre el texto y el botón */
+    margin-bottom: 20px;
 }
 
 .titulo {
     color: rgb(248, 218, 220);
-    
+    margin-top: 50px;
 }
 
-.descripcion {
-    color: white;
-    margin-bottom: 30px;
-    margin-top: -10px;
-}
 
 .button.boton-consolas {
     background-color: blue;
     color: white;
-    border: none; /* Quita el borde del botón */
+    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -106,11 +99,7 @@ header {
     color: white;
 }
 
-
-
-/* CONSUMO API MAIN 
-____________________________________________________________ */
-/* Estilos para la sección de productos */
+/* CONSUMO API MAIN ____________________________________________ */
 /* Estilos para la sección de productos */
 .categories-section {
     display: flex;
@@ -119,13 +108,17 @@ ____________________________________________________________ */
     padding: 5px;
 }
 
-/* Estilos para la categoría */
-
+.category {
+    width: 100%;
+    margin-bottom: 40px;
+}
 
 .category h2 {
     margin-bottom: 20px;
-    color: #060d53; /* Cambio de color a azul */
-    text-align: left; /* Alineación a la izquierda */
+    color: #060d53;
+    text-align: left;
+    width: 100%;
+    font-size: 1.5em;
 }
 
 /* Estilos para el contenedor de productos */
@@ -137,29 +130,27 @@ ____________________________________________________________ */
 
 /* Estilos para cada producto */
 .product {
-    width: 250px; /* Tamaño fijo de la tarjeta */
+    width: calc(100% - 40px);
+    max-width: 200px;
+    max-height: 200px;
+    height: 100%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 10px;
     transition: transform 0.3s ease;
 }
-
-
 
 .product:hover {
     transform: translateY(-5px);
 }
 
 .product img {
-    width: 80px; /* La imagen ocupa todo el ancho de la tarjeta */
-    height: 80px; /* Altura automática para mantener la proporción */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-bottom: 1px solid #ddd;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .product-info {
@@ -170,22 +161,95 @@ ____________________________________________________________ */
     margin-top: 0;
     margin-bottom: 10px;
     color: #610505;
-    font-size: 18px; /* Tamaño del nombre del producto */
+    font-size: 18px;
 }
 
 .product-info p {
     margin: 0;
     color: #0a0101;
-    font-size: 16px; /* Tamaño del precio */
+    font-size: 16px;
 }
 
 
 
 
-/* Footer Y formulario */
 
 
 
+
+
+/* Formulario agregar productos  */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #6a0dad; /* Color morado para el título */
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #007bff; /* Bordes azules */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="url"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00a2ff; /* Azul cielo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer y formulario */
 footer {
     background-color: #f0f0f0;
     padding: 20px;
@@ -197,8 +261,8 @@ footer {
 
 .footer-logo img {
     width: 100px;
-    top: 30px
 }
+
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -210,8 +274,6 @@ footer {
     text-decoration: none;
     color: #007bff;
 }
-
-
 
 .footer-form {
     text-align: center;
@@ -232,9 +294,12 @@ footer {
 #contact-form input,
 #contact-form textarea {
     margin-bottom: 10px;
-    padding: 8px;
-    width: calc(50% - 16px); /* Ajuste para el padding */
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
     box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #form-messages {
@@ -247,18 +312,16 @@ footer {
     background-color: #007bff;
     color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #contact-form button:hover {
     background-color: #0056b3;
 }
 
-
-
-
-
-
+/* Media Queries */
 @media (max-width: 768px) {
     .navbar-menu {
         display: none;
@@ -293,5 +356,23 @@ footer {
 
     .navbar-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .categories-section {
+        padding: 10px;
+    }
+
+    .category h2 {
+        font-size: 1.2em;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 90%;
     }
 }

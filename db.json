@@ -49,6 +49,13 @@
       "precio": 49.99,
       "foto": "assets/images/productos/4.webp",
       "id": "dae1"
+    },
+    {
+      "id": "337d",
+      "nombre": "alexandro",
+      "precio": "355",
+      "foto": "https://lh3.googleusercontent.com/a/ALm5wu2q6O_vTYO2NexdTbVWqeuLP8MV0C19je9AS8pErg=s96-c",
+      "categoria": "diversos"
     }
   ],
   "playeras": [
@@ -76,7 +83,6 @@
       "foto": "assets/images/productos/4.webp",
       "id": "3330"
     }
-    
   ],
   "usuarios": [
     {

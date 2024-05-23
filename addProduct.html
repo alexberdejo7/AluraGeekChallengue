@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Artículo Nuevo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Agregar Artículo Nuevo</h1>
-    <form id="formularioAgregar">
+    <h1 class="titulo-agregar">Agregar Artículo Nuevo</h1>
+    <form id="formularioAgregar" class="form-agregar">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" required><br>
         
@@ -24,11 +25,9 @@
             <option value="playeras">Playeras</option>
         </select><br><br>
         
-        <input type="submit" value="Agregar Artículo">
+        <input type="submit" value="Agregar Artículo" class="btn-agregar">
     </form>
 
-    <script src="addProduct.js">
-       
-    </script>
+    <script src="addProduct.js"></script>
 </body>
 </html>
