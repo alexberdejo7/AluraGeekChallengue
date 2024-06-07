@@ -7,15 +7,22 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: #ad0d0d; /* Cambia el color de fondo a morado */
+    padding: 40px 80px;
     color: #fff;
+    position: relative;
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar-logo img {
-    height: 40px;
+    height: 50px;
 }
 
 .navbar-search input[type="text"],
@@ -56,16 +63,6 @@ body {
 
 /* _______________________________________________ */
 /* Header Fondo */
-header {
-    position: relative;
-    height: 45vh;
-    background-image: url('assets/images/Hero.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-}
 
 .header-content {
     text-align: left;
@@ -81,8 +78,13 @@ header {
 .titulo {
     color: rgb(248, 218, 220);
     margin-top: 50px;
+    text-align: center; /* Centrando el título */
 }
 
+.titulo-agregar {
+    color: #6a0dad; /* Color morado para el título */
+    text-align: center;
+}
 
 .button.boton-consolas {
     background-color: blue;
@@ -106,6 +108,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
+    flex: 2;
 }
 
 .category {
@@ -116,7 +119,7 @@ header {
 .category h2 {
     margin-bottom: 20px;
     color: #060d53;
-    text-align: left;
+    text-align: center; /* Centrando el título */
     width: 100%;
     font-size: 1.5em;
 }
@@ -130,15 +133,14 @@ header {
 
 /* Estilos para cada producto */
 .product {
-    width: calc(100% - 40px);
-    max-width: 200px;
-    max-height: 200px;
-    height: 100%;
-    background-color: #fff;
+    width: calc(50% - 20px); /* Reduciendo el espacio entre los productos */
+    max-width: 200px; /* Ajustando el ancho máximo */
+    height: auto; /* Ajustando automáticamente la altura */
+    background-color: transparent;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(182, 133, 133, 0.1);
     overflow: hidden;
-    margin: 10px;
+    margin: 7px;
     transition: transform 0.3s ease;
 }
 
@@ -147,10 +149,12 @@ header {
 }
 
 .product img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+    width: 200px; /* Ajustando la imagen al 100% del ancho del contenedor */
+    height: 200px; /* Ajustando automáticamente la altura */
     border-bottom: 1px solid #ddd;
+    object-fit: cover;
+    margin-bottom: 3px;
+    border-radius: 3%;
 }
 
 .product-info {
@@ -159,7 +163,7 @@ header {
 
 .product-info h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     color: #610505;
     font-size: 18px;
 }
@@ -170,15 +174,25 @@ header {
     font-size: 16px;
 }
 
+.eliminar-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    display: block; /* Asegúrate de que sea un bloque para que aparezca debajo */
+}
+
+.eliminar-btn:hover {
+    background-color: #cc0000;
+}
 
 
-
-
-
-
-
-
-/* Formulario agregar productos  */
+/* Formulario agregar productos */
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
@@ -236,18 +250,19 @@ form input[type="submit"]:hover {
     background-color: #00a2ff; /* Azul cielo */
 }
 
+/* Flexbox layout for main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.add-product-section {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 20px;
+}
 
 /* Footer y formulario */
 footer {
@@ -368,6 +383,11 @@ footer {
 
     .product {
         width: 100%;
+        max-width: 100%;
+    }
+
+    .add-product-section {
+        margin: 20px 0;
         max-width: 100%;
     }
 

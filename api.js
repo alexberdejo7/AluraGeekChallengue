@@ -30,24 +30,37 @@ function renderProducts(data, categoryName) {
         // Crea un elemento para cada producto
         const productoElemento = document.createElement('div');
         productoElemento.classList.add('product');
+        productoElemento.classList.add('card');
 
+        // Crea un div para el cuerpo de la tarjeta
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+
+        // Crea un elemento de imagen
         const imagen = document.createElement('img');
         imagen.src = producto.foto;
         imagen.alt = producto.nombre;
+        imagen.classList.add('card-img-top');
 
-        const nombre = document.createElement('h3');
+        // Crea un elemento HTML para el nombre
+        const nombre = document.createElement('h5');
         nombre.textContent = producto.nombre;
+        nombre.classList.add('card-title');
 
+        // Crea un elemento HTML para el precio
         const precio = document.createElement('p');
         precio.textContent = `Precio: $${producto.precio}`;
+        precio.classList.add('card-text');
 
-        const productoInfo = document.createElement('div');
-        productoInfo.classList.add('product-info');
-        productoInfo.appendChild(nombre);
-        productoInfo.appendChild(precio);
+        // Agrega la imagen al cuerpo de la tarjeta
+        cardBody.appendChild(imagen);
 
-        productoElemento.appendChild(imagen);
-        productoElemento.appendChild(productoInfo);
+        // Agrega el nombre y el precio al cuerpo de la tarjeta
+        cardBody.appendChild(nombre);
+        cardBody.appendChild(precio);
+
+        // Agrega el cuerpo de la tarjeta al elemento del producto
+        productoElemento.appendChild(cardBody);
 
         // Agrega el producto al contenedor de productos
         productsContainer.appendChild(productoElemento);

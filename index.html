@@ -15,28 +15,31 @@
             <div class="navbar-menu" id="navbarMenu">
                 <!-- Elimina la opción de Login -->
             </div>
-           
             <div class="navbar-toggle" id="navbarToggle">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
         </nav>
-
         <section class="header-content">
-            <div class="texto-header">
-                <h1 class="titulo">Bienvenido a nuestra tienda en línea</h1>
-            </div>
+            <!-- Aquí puedes agregar contenido del encabezado -->
         </section>
     </header>
+
+
+    <div class="categories-section" id="categories-section">
+        <!-- Aquí se renderizarán los productos -->
+    </div>
+
+
 
     <main>
         <section class="categories-section" id="categories-section">
             <!-- Aquí van las categorías y productos -->
         </section>
         <section class="add-product-section">
-            <h1>Agregar Artículo Nuevo</h1>
-            <form id="formularioAgregar">
+            <h1 class="titulo-agregar">Agregar Artículo Nuevo</h1>
+            <form id="formularioAgregar" class="form-agregar">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre" required><br>
                 
@@ -53,10 +56,14 @@
                     <option value="playeras">Playeras</option>
                 </select><br><br>
                 
-                <input type="submit" value="Agregar Artículo">
+                <input type="submit" value="Agregar Artículo" class="btn-agregar">
+                <button id="limpiarProductos" class="btn-limpiar">Limpiar Productos</button>
+
             </form>
         </section>
     </main>
+
+
 
     <footer>
         <div class="footer-logo">
