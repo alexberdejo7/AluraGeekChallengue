@@ -1,17 +1,13 @@
-fetch('https://alexberdejo7.github.io/AluraGeekChallengue/db.json')
-  .then(response => response.json())
-  .then(data => {
-    // Suponiendo que data es un objeto con categorías como propiedades
-    Object.keys(data).forEach(categoria => {
-      renderProducts(data[categoria], categoria);
-    });
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    alert('Error al obtener los productos');
-  });
-
-  
+export function fetchAndRenderProducts(endpoint, categoryName) {
+    fetch(`http://localhost:3001/${endpoint}`)
+        .then(response => response.json())
+        .then(data => {
+            renderProducts(data, categoryName);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
 
 function renderProducts(data, categoryName) {
     const categoriesSection = document.getElementById('categories-section');
