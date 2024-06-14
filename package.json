@@ -4,7 +4,8 @@
   "description": "Alura Ecommer",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json --port $PORT --host 0.0.0.0"
   },
   "author": "",
   "license": "ISC",

@@ -1,13 +1,23 @@
-export function fetchAndRenderProducts(endpoint, categoryName) {
-    fetch(`http://localhost:3001/${endpoint}`)
-        .then(response => response.json())
-        .then(data => {
-            renderProducts(data, categoryName);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-}
+fetch('https://alexberdejo7.github.io/AluraGeekChallengue/' + data.categoria, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => {
+    if (response.ok) {
+      alert('Artículo agregado correctamente');
+      // location.reload(); // Comentado para evitar recarga de la página
+    } else {
+      alert('Error al agregar artículo');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Error al agregar artículo');
+  });
+  
 
 function renderProducts(data, categoryName) {
     const categoriesSection = document.getElementById('categories-section');
