@@ -1,22 +1,16 @@
-fetch('https://alexberdejo7.github.io/AluraGeekChallengue/' + data.categoria, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => {
-    if (response.ok) {
-      alert('Artículo agregado correctamente');
-      // location.reload(); // Comentado para evitar recarga de la página
-    } else {
-      alert('Error al agregar artículo');
-    }
+fetch('https://alexberdejo7.github.io/AluraGeekChallengue/db.json')
+  .then(response => response.json())
+  .then(data => {
+    // Suponiendo que data es un objeto con categorías como propiedades
+    Object.keys(data).forEach(categoria => {
+      renderProducts(data[categoria], categoria);
+    });
   })
   .catch(error => {
     console.error('Error:', error);
-    alert('Error al agregar artículo');
+    alert('Error al obtener los productos');
   });
+
   
 
 function renderProducts(data, categoryName) {
