@@ -1,25 +1,25 @@
 {
   "consolas": [
     {
-      "nombre": "Producto 1",
+      "nombre": "Termo Star Wars",
       "precio": 499.99,
       "foto": "assets/images/productos/6.webp",
       "id": "7174"
     },
     {
-      "nombre": "Producto 2",
+      "nombre": "Espada Star Wars",
       "precio": 499.99,
-      "foto": "assets/images/productos/2.webp",
+      "foto": "https://m.media-amazon.com/images/I/51dEI4AgZ3S.__AC_SX300_SY300_QL70_ML2_.jpg",
       "id": "c9f3"
     },
     {
-      "nombre": "Producto 3",
+      "nombre": "Coleccionable",
       "precio": 499.99,
       "foto": "assets/images/productos/3.webp",
       "id": "c9f4"
     },
     {
-      "nombre": "Producto 4",
+      "nombre": "Decoracion Star Wars",
       "precio": 499.99,
       "foto": "assets/images/productos/4.webp",
       "id": "b604"
@@ -27,61 +27,54 @@
   ],
   "diversos": [
     {
-      "nombre": "Teclado mecánico",
+      "nombre": "Pikachu Caja",
       "precio": 99.99,
-      "foto": "assets/images/productos/6.webp",
+      "foto": "https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00019172651844L1.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "id": "f175"
     },
     {
-      "nombre": "Ratón gaming",
+      "nombre": "Charizard Caja",
       "precio": 49.99,
-      "foto": "assets/images/productos/2.webp",
+      "foto": "https://kohdarshan.mx/cdn/shop/files/variant-image-color-charizard-with-box-2.jpg?v=1709234939&width=713",
       "id": "2781"
     },
     {
-      "nombre": "Teclado mecánico",
+      "nombre": "Kirby Cojin",
       "precio": 99.99,
-      "foto": "assets/images/productos/3.webp",
+      "foto": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSw8riBeudqoFs-t23sk6_CTZMn3yTVduLu8sViNqGCoqknPetDhMNWDvCSnihDkaUmlaUhgsRIQLOgnsakkbpSlLL6MmMMsFGufSMT2UGw&usqp=CAE",
       "id": "5447"
     },
     {
-      "nombre": "Ratón gaming",
+      "nombre": "Goku Caja",
       "precio": 49.99,
-      "foto": "assets/images/productos/4.webp",
+      "foto": "https://acdn.mitiendanube.com/stores/003/728/524/products/0001458-01-c77d0c6d9c627392ae17170288764924-640-0.webp",
       "id": "dae1"
-    },
-    {
-      "id": "b4d0",
-      "nombre": "alexandro",
-      "precio": "3434",
-      "foto": "https://lh3.googleusercontent.com/a/ALm5wu2q6O_vTYO2NexdTbVWqeuLP8MV0C19je9AS8pErg=s96-c",
-      "categoria": "diversos"
     }
   ],
   "playeras": [
     {
-      "nombre": "Playera negra",
+      "nombre": "Playera DBZ",
       "precio": 19.99,
-      "foto": "assets/images/productos/6.webp",
+      "foto": "https://www.quiubolee.com/cdn/shop/products/DragonBallGokuUniforme_9b1fddad-833d-4873-961b-9e294a17c581-681197_480x480_crop_center.jpg?v=1630139413",
       "id": "f4b7"
     },
     {
-      "nombre": "Playera blanca",
+      "nombre": "Playera Spiderman",
       "precio": 19.99,
-      "foto": "assets/images/productos/2.webp",
+      "foto": "https://m.media-amazon.com/images/I/71nVz9xgidL._AC_SX679_.jpg",
       "id": "923a"
     },
     {
-      "nombre": "Playera negra",
+      "nombre": "Playera Yugioh",
       "precio": 19.99,
-      "foto": "assets/images/productos/3.webp",
-      "id": "0410"
+      "foto": "https://beautyanddrama.com/cdn/shop/products/581_540x.jpg?v=1666912988",
+      "id": "3330"
     },
     {
-      "nombre": "Playera blanca",
+      "nombre": "Playera Superman",
       "precio": 19.99,
-      "foto": "assets/images/productos/4.webp",
-      "id": "3330"
+      "foto": "https://m.media-amazon.com/images/I/81HFKoOyr-L.__AC_SY445_SX342_QL70_ML2_.jpg",
+      "id": "0410"
     }
   ],
   "usuarios": [

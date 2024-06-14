@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ad0d0d; /* Cambia el color de fondo a morado */
+    background-color: #ad0d0d;
     padding: 40px 80px;
     color: #fff;
     position: relative;
@@ -61,9 +61,7 @@ body {
     background-color: #28a745;
 }
 
-/* _______________________________________________ */
 /* Header Fondo */
-
 .header-content {
     text-align: left;
     padding: 2%;
@@ -78,11 +76,11 @@ body {
 .titulo {
     color: rgb(248, 218, 220);
     margin-top: 50px;
-    text-align: center; /* Centrando el título */
+    text-align: center;
 }
 
 .titulo-agregar {
-    color: #6a0dad; /* Color morado para el título */
+    color: #6a0dad;
     text-align: center;
 }
 
@@ -101,14 +99,36 @@ body {
     color: white;
 }
 
-/* CONSUMO API MAIN ____________________________________________ */
-/* Estilos para la sección de productos */
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;  
+}
+
+/* Sección de categorías y productos */
+.categories-section {
+    flex: 2;
+    max-width: 65%; 
+    margin-right: 20px;
+}
+
+/* Sección de agregar producto */
+.add-product-section {
+    flex: 1;
+    max-width: 30%; 
+}
+
+/* CONSUMO API MAIN */
 .categories-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
-    flex: 2;
 }
 
 .category {
@@ -119,28 +139,26 @@ body {
 .category h2 {
     margin-bottom: 20px;
     color: #060d53;
-    text-align: center; /* Centrando el título */
+    text-align: center;
     width: 100%;
     font-size: 1.5em;
 }
 
-/* Estilos para el contenedor de productos */
 .products-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Estilos para cada producto */
 .product {
-    width: calc(50% - 20px); /* Reduciendo el espacio entre los productos */
-    max-width: 200px; /* Ajustando el ancho máximo */
-    height: auto; /* Ajustando automáticamente la altura */
+    width: calc(50% - 10px);
+    max-width: 150px;
+    height: auto;
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(182, 133, 133, 0.1);
     overflow: hidden;
-    margin: 7px;
+    margin: 5px;
     transition: transform 0.3s ease;
 }
 
@@ -149,12 +167,13 @@ body {
 }
 
 .product img {
-    width: 200px; /* Ajustando la imagen al 100% del ancho del contenedor */
-    height: 200px; /* Ajustando automáticamente la altura */
+    width: 100%;
+    height: auto;
     border-bottom: 1px solid #ddd;
     object-fit: cover;
     margin-bottom: 3px;
     border-radius: 3%;
+    overflow: hidden;
 }
 
 .product-info {
@@ -166,12 +185,14 @@ body {
     margin-bottom: 7px;
     color: #610505;
     font-size: 18px;
+    text-align: center;
 }
 
 .product-info p {
     margin: 0;
     color: #0a0101;
     font-size: 16px;
+    text-align: center;
 }
 
 .eliminar-btn {
@@ -184,16 +205,14 @@ body {
     font-size: 14px;
     margin-top: 10px;
     transition: background-color 0.3s ease;
-    display: block; /* Asegúrate de que sea un bloque para que aparezca debajo */
+    display: block;
 }
 
 .eliminar-btn:hover {
     background-color: #cc0000;
 }
 
-
 /* Formulario agregar productos */
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -201,18 +220,17 @@ body {
 }
 
 h1 {
-    color: #6a0dad; /* Color morado para el título */
+    color: #6a0dad;
     text-align: center;
 }
 
-/* Estilos para el formulario */
 form {
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    border: 2px solid #007bff; /* Bordes azules */
-    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #007bff;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -247,7 +265,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #00a2ff; /* Azul cielo */
+    background-color: #00a2ff;
 }
 
 /* Flexbox layout for main content */
@@ -394,5 +412,51 @@ footer {
     #contact-form input,
     #contact-form textarea {
         width: 90%;
+    }
+}
+
+/* Para pantallas superiores a 1080px */
+@media (min-width: 1080px) {
+    .main-container {
+        flex-direction: row;
+    }
+    .categories-section {
+        max-width: 60%;
+    }
+    .add-product-section {
+        max-width: 35%;
+    }
+}
+
+/* Para pantallas inferiores a 1080px */
+@media (max-width: 1079px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .categories-section, .add-product-section {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+    .categories-section, .add-product-section {
+        margin-bottom: 20px;
+    }
+
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
     }
 }
