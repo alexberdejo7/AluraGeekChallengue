@@ -2,25 +2,25 @@
   "consolas": [
     {
       "nombre": "Termo Star Wars",
-      "precio": 499.99,
+      "precio": 399.99,
       "foto": "assets/images/productos/6.webp",
       "id": "7174"
     },
     {
       "nombre": "Espada Star Wars",
-      "precio": 499.99,
+      "precio": 419.99,
       "foto": "https://m.media-amazon.com/images/I/51dEI4AgZ3S.__AC_SX300_SY300_QL70_ML2_.jpg",
       "id": "c9f3"
     },
     {
       "nombre": "Coleccionable",
-      "precio": 499.99,
+      "precio": 249.99,
       "foto": "assets/images/productos/3.webp",
       "id": "c9f4"
     },
     {
-      "nombre": "Decoracion Star Wars",
-      "precio": 499.99,
+      "nombre": "Taza Star Wars",
+      "precio": 299.99,
       "foto": "assets/images/productos/4.webp",
       "id": "b604"
     }

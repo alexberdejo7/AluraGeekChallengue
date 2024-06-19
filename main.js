@@ -6,32 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchAndRenderProducts('playeras', 'Playeras');
 });
 
-//eliminar productos
-document.getElementById('limpiarProductos').addEventListener('click', function() {
-    limpiarProductos();
-});
-function limpiarProductos() {
-    fetch('http://localhost:3001/limpiarProductos', {
-        method: 'DELETE'
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('Productos eliminados correctamente');
-            location.reload(); // Recarga la página para mostrar los cambios
-        } else {
-            alert('Error al eliminar productos');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Error al eliminar productos');
-    });
-}
 
 
 
-
-// Resto del código para el formulario de contacto
+// resto del código para el formulario de contacto
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
     const formMessages = document.getElementById('form-messages');

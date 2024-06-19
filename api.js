@@ -25,7 +25,7 @@ function renderProducts(data, categoryName) {
     const productsContainer = document.createElement('div');
     productsContainer.classList.add('products-container');
     
-    // Itera sobre cada producto en la categoría
+    // Cada producto en la categoría
     data.forEach(producto => {
         // Crea un elemento para cada producto
         const productoElemento = document.createElement('div');
